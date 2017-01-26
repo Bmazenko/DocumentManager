@@ -1,0 +1,24 @@
+<form class="form-horizontal" role="form"
+enctype="multipart/form-data" method="POST"
+action="/file-upload">
+<div class="page-header">
+    <h3>Upload Files</h3>
+</div>
+<br><br>
+<div class="form-group">
+<label for="fieldDoc" class="col-sm-2 control-label">
+File</label>
+<div class="col-sm-4">
+ 
+<!-- Only accept text files -->
+<input type="file" class="form-control" required
+accept="text/*" id="fieldDoc" name="doc">
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-4">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+ 
+</form>

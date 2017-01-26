@@ -1,0 +1,15 @@
+<div class="page-header">
+    <h3>Files Uploaded</h3>
+</div>
+
+<div>
+{{#each files}}
+   <p>
+     <strong>File: </strong>{{tFile.doc.name}}
+     <a href={{toPath}}{{tFile.doc.name}} download={{tFile.doc.name}}>Download File</a>
+     <br>
+     <strong>File Contents:</strong>{{tData}}
+   </p>
+   <hr>
+{{/each}}
+</div>
